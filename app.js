@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
-const port = 5500;
+const port = process.env.PORT;
 const cors = require("cors");
 app.use(cors());
 // app.use(cors()): This applies the CORS middleware globally, allowing your API to accept requests from other origins.
